@@ -1,5 +1,4 @@
-/* Copyright (c) 2011, Code Aurora Forum. All rights reserved.
- * Copyright (C) 2012 Sony Mobile Communications AB.
+/* Copyright (C) 2012 Sony Mobile Communications AB.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -12,19 +11,9 @@
  *
  */
 
-#ifndef __ASM_ARCH_MSM_SERIAL_HS_LITE_H
-#define __ASM_ARCH_MSM_SERIAL_HS_LITE_H
+#ifndef _CHARGER_SONY_FUSION3_H
+#define _CHARGER_SONY_FUSION3_H
 
-#include <linux/serial_core.h>
-
-struct msm_serial_hslite_platform_data {
-	unsigned config_gpio;
-	unsigned uart_tx_gpio;
-	unsigned uart_rx_gpio;
-	int line;
-	int type;
-	int (*pre_startup)(struct uart_port *);
-};
+extern struct pm8921_bms_battery_data pm8921_battery_data __devinitdata;
 
 #endif
-
